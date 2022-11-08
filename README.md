@@ -1,6 +1,23 @@
 # Final Project Proposal - Plant tracker
 Group - Kenan Arica
 
+## Checkpoint 2: tech stack & MVP proposal
+Deployed link - can be found [here](https://quiet-cranachan-8385fe.netlify.app/). There's nothing there yet. 
+
+### Tech stack
+- Supabase for Auth
+- Supabase for DB storage
+- Supabase for file storage
+- [ChartJS](https://www.chartjs.org/) for graphing data insights about plants / waterings
+- Basic react for frontend. Mostly used for the OOP side of things (render X amount of these objects inside this object, etc)
+
+### MVP Proposal
+- Creating a POST endpoint to add a plant under a user ID
+- Creating a GET endpoint to get waterings for a certain plant ID based on it's attached userID for data insights
+- Creating a POST endpoint to signal a watering (and potentially a spot health rating of the plant)
+
+
+
 ## What does it do?
 - My application stores and tracks maintainence on their gardens and plants.
 I find it very difficult myself to keep track of when I watered what plants, as most plants have specific watering routines required, so watering them all at the same time may not work best.
@@ -16,3 +33,4 @@ However, I am hoping that the aspect of organization and intuitive metric visual
 ## Security / Privacy concerns
 When holding user data, albeit nontraditional types of data about their plants, it is extremely important to pay close attention to detail in security.
 Holding this data alone is a privacy concern, and will be addressed by using a popular authentication service to ensure that exploiting a vulnerability in my service will be just as difficult as exploiting a vulnerability in most of the other internet services. 
+
