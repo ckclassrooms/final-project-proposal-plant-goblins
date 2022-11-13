@@ -1,0 +1,24 @@
+{
+  "name": "karica2-484-final",
+  "version": "1.0.0",
+  "description": "Group - Kenan Arica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckclassrooms/final-project-proposal-plant-goblins.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ckclassrooms/final-project-proposal-plant-goblins/issues"
+  },
+  "homepage": "https://github.com/ckclassrooms/final-project-proposal-plant-goblins#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.5",
+    "dotenv": "^16.0.3"
+  },
+  "type": "module"
+}
