@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Final Project Proposal - Plant tracker
+Group - Kenan Arica
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deliverable 1: MVP 
+- **hosted at: https://quiet-cranachan-8385fe.netlify.app/**
 
-## Available Scripts
+* My MVP proposal included an endpoint to get / manage plants and their waterings. My original idea was to use some kind of express server to manage these interactions, but I ended up writing a wrapper of sorts instead. It's very imperfect, and the current deployed app doesn't use most of it because I can't figure out async programming. 
 
-In the project directory, you can run:
+### What my MVP **DOES** do
+- Has a very rudimentary interface that pulls all plants for a given user (I have preloaded a few)
+- Mimics the watering mechanic via changing div element color on button press. Since these aren't linked to a 'last watered' metric yet, they don't preserve state upon refresh. 
 
-### `npm start`
+### What my MVP **DOES NOT** do
+- Provide user auth or login
+- Provide ways to manage plants (adding, removing)
+- Provide visual analytics about the plants
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Checkpoint 2: tech stack & MVP proposal
+Deployed link - can be found [here](https://quiet-cranachan-8385fe.netlify.app/). There's nothing there yet. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Tech stack
+- Supabase for Auth
+- Supabase for DB storage
+- Supabase for file storage
+- [ChartJS](https://www.chartjs.org/) for graphing data insights about plants / waterings
+- Basic react for frontend. Mostly used for the OOP side of things (render X amount of these objects inside this object, etc)
 
-### `npm test`
+### MVP Proposal
+- Creating a POST endpoint to add a plant under a user ID
+- Creating a GET endpoint to get waterings for a certain plant ID based on it's attached userID for data insights
+- Creating a POST endpoint to signal a watering (and potentially a spot health rating of the plant)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## What does it do?
+- My application stores and tracks maintainence on their gardens and plants.
+I find it very difficult myself to keep track of when I watered what plants, as most plants have specific watering routines required, so watering them all at the same time may not work best.
+My app will allow a user to log in, create any number of plants that (hopefully) correspond to plants in real life, and mark when they water them. 
+Time permitting, I hope to add some form of layout system that allows users to view their plants (and watered status) in some form of meaningful geolocative way. 
+For example, a user has houseplants and an outdoor garden. The user assigns plants X and Y to the `garden` group, and can easily pull up their garden plants 
+with the click of a button. After that, analytics can be provided about plant insights.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How is it different from a CRUD app? 
+My app will be able to provide analytics and easy visual access to chronological information that is vital for maintaing a healthy garden. CRUD operations are, admittedly, a large part of the project.
+However, I am hoping that the aspect of organization and intuitive metric visualization will set it apart. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Security / Privacy concerns
+When holding user data, albeit nontraditional types of data about their plants, it is extremely important to pay close attention to detail in security.
+Holding this data alone is a privacy concern, and will be addressed by using a popular authentication service to ensure that exploiting a vulnerability in my service will be just as difficult as exploiting a vulnerability in most of the other internet services. 
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
