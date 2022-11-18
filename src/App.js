@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { supabase, getPlantsByUser, addWatering, getWateringsByPlant } from './supabaseClient.js'
+import { supabase, getPlantsByUser, addWatering, getWateringsByPlant, getPlantInfo, addPlant} from './supabaseClient.js'
 import React, {useState, useEffect, componentDidMount} from 'react'
 import { render } from '@testing-library/react';
 
@@ -14,19 +14,9 @@ class PlantList extends React.Component {
     super(props)
     this.state = { 'all_plants' : [{'name' : 'PLANTS NOW LOADING'}]}
   }
-  // const [plants, setPlants] = useState([{'name' : 'PLANTS NOW LOADING'}])
-
-  // componentWillReceiveProps(newprops) { 
-  //   // this.state = {'all_plants' : newprops.all_plants}
-  //   return {
-  //     'all_plants' : newprops.all_plants
-  //   }
-  // }
   
   componentDidMount() {
-    getPlantsByUser(5).then(response => {
-
-      // this.state = {all_plants : response["data"]}
+    getPlantsByUser(4).then(response => {
       this.setState({'all_plants' : response["data"]})
     });
   }
@@ -36,20 +26,26 @@ class PlantList extends React.Component {
     let all_plants = this.state.all_plants
     let plantList = []
 
-    console.log(all_plants)
-    // let all_plants = this.state.all_plants
-
     for(let i = 0; i < all_plants.length; i++) { 
+
+      let plant_div_id = `plant_${all_plants[i]["id"]}`
+      function handleButton(stuff) { 
+        document.getElementById(plant_div_id).style.backgroundColor = "green";
+      }
+
       console.log(all_plants[i])  
       plantList.push(
-      <div>
+
+      <div class="plantEntry" id={plant_div_id}>
       <h3>{all_plants[i]["name"]}</h3>
-      <button onClick={console.log("watering " + all_plants[i]["name"])}>Water</button>    
+      <button onClick={handleButton}>Water</button>    
       </div>
       )
   
     }
-    return <ul>{plantList}</ul>
+    return <div class="plantContainer">
+      <ul>{plantList}</ul>
+    </div>
   }
 }
 
@@ -62,34 +58,23 @@ class App extends React.Component {
     this.state = { 'plants' : plants }
 
   }
-
-  // useEffect(() => {
-  //   console.log("state change")
-  // });
-  // const [all_plants, setPlants] = useState([{"name" : "LOADING PLANTS....."}])
-
   componentDidMount() { 
     getPlantsByUser(5).then(response => {
       
       // setPlants(response["data"])
       // setPlants(response["data"])
-      this.state = {
+      this.setState({
         'plants' : response["data"] 
-      }
-      // console.log("Updated state");
-      // console.log(this.state.plants);
+      })
       
     });
   }
-  
-
   
   render() {
 
     // let plants = [{"name" : "gred"}]
     return (
       <div className="App">
-  
       <PlantList 
       />
       </div>

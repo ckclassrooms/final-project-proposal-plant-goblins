@@ -5,9 +5,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: blue;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.homeheader { 
+  padding: 50px;
+  text-align: left;
+  background-color: #063f20;
+  color: #000000;
+  font-size: 30px;
+  font-family: 'Arial Bold', sans-serif;
+}
+
+.plantContainer { 
+  display: grid;
+}
+
+.plantEntry { 
+  text-align: left;
+  margin-left: 5%;
+  background-color: #ffd500;
+}
+
+.sidebarCol {
+  background-color: #5e3cf7;
+  height: 50%;
+}
+
+.column {
+  float: left;
+  width: 40%;
+}
+
+.column.sidebarCol {
+  float: left;
+  width: 10%;
 }
