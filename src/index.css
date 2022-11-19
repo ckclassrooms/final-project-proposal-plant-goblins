@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: blue;
+  background-color: rgb(70, 70, 70);
 }
 
 code {
@@ -17,7 +17,7 @@ code {
   padding: 50px;
   text-align: left;
   background-color: #063f20;
-  color: #000000;
+  color: #e0e0e0;
   font-size: 30px;
   font-family: 'Arial Bold', sans-serif;
 }
