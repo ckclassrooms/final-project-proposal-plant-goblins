@@ -1,6 +1,20 @@
 # Final Project Proposal - Plant tracker
 Group - Kenan Arica
 
+## Deliverable 1: MVP 
+- **hosted at: https://quiet-cranachan-8385fe.netlify.app/**
+
+* My MVP proposal included an endpoint to get / manage plants and their waterings. My original idea was to use some kind of express server to manage these interactions, but I ended up writing a wrapper of sorts instead. It's very imperfect, and the current deployed app doesn't use most of it because I can't figure out async programming. 
+
+### What my MVP **DOES** do
+- Has a very rudimentary interface that pulls all plants for a given user (I have preloaded a few)
+- Mimics the watering mechanic via changing div element color on button press. Since these aren't linked to a 'last watered' metric yet, they don't preserve state upon refresh. 
+
+### What my MVP **DOES NOT** do
+- Provide user auth or login
+- Provide ways to manage plants (adding, removing)
+- Provide visual analytics about the plants
+
 ## Checkpoint 2: tech stack & MVP proposal
 Deployed link - can be found [here](https://quiet-cranachan-8385fe.netlify.app/). There's nothing there yet. 
 
@@ -33,4 +47,3 @@ However, I am hoping that the aspect of organization and intuitive metric visual
 ## Security / Privacy concerns
 When holding user data, albeit nontraditional types of data about their plants, it is extremely important to pay close attention to detail in security.
 Holding this data alone is a privacy concern, and will be addressed by using a popular authentication service to ensure that exploiting a vulnerability in my service will be just as difficult as exploiting a vulnerability in most of the other internet services. 
-
