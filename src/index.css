@@ -46,3 +46,9 @@ code {
   float: left;
   width: 10%;
 }
+
+.userLabel { 
+  float: right;
+  margin-right: 5%;
+  font-size: medium;
+}
