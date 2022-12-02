@@ -1,0 +1,292 @@
+.html { 
+  height: 100%;
+
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #063f20;
+  min-height: 100vh;
+  height: 100%;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.homeheader { 
+  padding: 50px;
+  text-align: left;
+  background-color: #063f20;
+  color: #e0e0e0;
+  font-size: 30px;
+  font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.plantContainer { 
+  display: grid;
+}
+
+.column {
+  float: left;
+}
+
+.userLabel { 
+  float: right;
+  margin-right: 5%;
+  font-size: medium;
+}
+
+
+.signOut { 
+  float: right;
+  visibility: hidden;
+  background-color: #7e4a25;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-weight: 5000;
+  border-style: none;
+  color: aliceblue;
+}
+.signOut:hover { 
+  background-color: #a94e2e;
+  color: white;
+}
+
+
+
+.mainContainer { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.sidebarCol {
+  background-color: #2b602c54;
+  flex: 10%;
+  flex-direction: column;
+  column-gap: 0px;
+}
+
+.plantCol { 
+  background-color: #f7d345  ;
+  flex: 40%;
+  height: fit-content;
+}
+
+.insightCol { 
+  
+  flex: 40%;
+  background-color: #063f20;
+  
+}
+
+.plantHeader { 
+  color: #9caa64;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-size: 250%;
+  float: left;
+  margin-left: 5%;
+}
+
+.lastWatered { 
+  color: #e0e0e0;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-size: 100%;
+  float: left;
+  margin-left: 5%;
+  
+}
+
+.basicInfo { 
+  flex-direction: column;
+  display: flex;
+}
+
+.plantEntry { 
+  text-align: left;
+  margin: 5%;
+  background-color: #fcf186;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-count: 4;
+}
+
+
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  box-sizing: border-box;
+  margin: 0px -10px;
+}
+
+.gridded_box {
+  box-sizing: border-box;
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 0px 10px;
+}
+
+.cell {
+  color: #242424;
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.select { 
+  height:100%;
+  width: 100%;
+  background-color: #f0af01;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-size: 100%;
+  font-weight: 5000;
+  border-style: none;
+  
+}
+.select:hover {
+  background-color: #ffee05;
+  color: black;
+}
+
+.water { 
+  height:100%;
+  width: 100%;
+  background-color: #3d6c6c;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-size: 100%;
+  font-weight: 5000;
+  border-style: none;
+  color: aliceblue;
+
+}
+
+.water:hover {
+  background-color: #33bdd2;
+  color: white;
+}
+
+.delete { 
+  height:100%;
+  width: 50%;
+  float: left;
+  background-color: #a32626;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-size: 100%;
+  font-weight: 5000;
+  border-style: none;
+  color: aliceblue;
+
+}
+
+.delete:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+
+.plantTitle { 
+  font-size: 100%;
+}
+
+
+.chartHolder { 
+  background-color: #7a8749;
+  margin:10px;
+  
+}
+
+.addPlantButton { 
+  width: 100%;
+  height: 8vh;
+  font-size: large;
+  background-color: #7e4a25;
+  border-style: none;
+  color: #e0e0e0;
+  }
+.addPlantButton:hover {
+  background-color: #a94e2e;
+  color: white;
+}
+
+.AddPlantLabel { 
+  background-color: rgb(39, 28, 19);
+  width: 100%;
+  height: 8vh;
+  font-size: large;
+  border-style: none;
+  color: #e0e0e0;
+  margin: auto;
+
+}
+.AddPlantP { 
+  width: 100%;
+  height: 8vh;
+  font-size: large;
+  background-color: #7e4a25;
+  border-style: none;
+  color: #e0e0e0;
+  
+}
+
+.plantCreationGuide { 
+  padding: 2vh;
+  background-color: #502712;
+  color: #e0e0e0;
+  vertical-align: middle;
+
+}
+
+.creationInput { 
+  background-color: #502712;
+  padding-bottom: 1vh;
+}
+
+.plantInput { 
+  background-color: 'black';
+  border-style: none;
+
+}
+
+input, textarea { 
+  background-color: #e6f0c2;
+}
+
+.outlineGuide { 
+  padding: 2vh;
+  background-color: #502712;
+  color: #e0e0e0;
+  vertical-align: middle;
+  font-size: small;
+}
+
+.greenO { 
+  text-decoration: underline green 3px
+}
+.redO { 
+  text-decoration: underline red 3px
+}
+.orangeO { 
+  text-decoration: underline orange 3px
+}
+.blueO { 
+  text-decoration: underline blue 3px
+}
+
+.timeSelectClass { 
+  background: #063f20;
+  color:#9caa64
+}

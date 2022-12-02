@@ -75,8 +75,18 @@ function addWatering(plant_id, health) {
   
 }
 
+function getPlantInfo(ownerID) { 
 
+  getPlantsByUser(5).then(response => {
+
+    // this.state = {all_plants : response["data"]}
+    console.log("OFF THE FACE OF THE EARTH")
+    console.log(response["data"])
+  });
+
+}
+// console.log(getPlantInfo(5));
 
 // addPlant("greg", 6)
-export {addPlant, getPlantsByUser, getWateringsByPlant, addWatering};
+export {addPlant, getPlantsByUser, getWateringsByPlant, addWatering, getPlantInfo};
 // console.log(data2)

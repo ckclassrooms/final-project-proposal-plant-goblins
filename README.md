@@ -3,7 +3,7 @@ Group - Kenan Arica
 
 ## Deliverable 1: MVP 
 - **hosted at: https://quiet-cranachan-8385fe.netlify.app/**
-- **the code for this build is on the adding-react branch. This branch (main) has mostly old files.**
+
 
 * My MVP proposal included an endpoint to get / manage plants and their waterings. My original idea was to use some kind of express server to manage these interactions, but I ended up writing a wrapper of sorts instead. It's very imperfect, and the current deployed app doesn't use most of it because I can't figure out async programming. 
 
