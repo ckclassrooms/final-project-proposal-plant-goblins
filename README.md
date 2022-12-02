@@ -1,6 +1,10 @@
 # Final Project Proposal - Plant tracker
 Group - Kenan Arica
 
+## Final project complete 
+- hosted at ->  https://quiet-cranachan-8385fe.netlify.app
+
+
 ## Deliverable 1: MVP 
 - **hosted at: https://quiet-cranachan-8385fe.netlify.app/**
 
