@@ -48,11 +48,8 @@ code {
 .signOut { 
   float: right;
   visibility: hidden;
-  /* height:100%; */
-  /* width: 100%; */
   background-color: #7e4a25;
   font-family: 'Arial Narrow Bold', sans-serif;
-  /* font-size: 100%; */
   font-weight: 5000;
   border-style: none;
   color: aliceblue;
@@ -62,20 +59,7 @@ code {
   color: white;
 }
 
-.addPlantButton { 
-  width: 100%;
-  height: 8vh;
-  font-size: large;
-  background-color: #7e4a25;
-  border-style: none;
-  color: #e0e0e0;
-  
-  /* margin: 5px; */
-}
-.addPlantButton:hover {
-  background-color: #a94e2e;
-  color: white;
-}
+
 
 .mainContainer { 
   display: flex;
@@ -88,6 +72,8 @@ code {
 .sidebarCol {
   background-color: #2b602c54;
   flex: 10%;
+  flex-direction: column;
+  column-gap: 0px;
 }
 
 .plantCol { 
@@ -112,8 +98,6 @@ code {
 }
 
 .lastWatered { 
-
-  /* color: #9caa64; */
   color: #e0e0e0;
   font-family: 'Arial Narrow Bold', sans-serif;
   font-size: 100%;
@@ -125,8 +109,6 @@ code {
 .basicInfo { 
   flex-direction: column;
   display: flex;
-  /* color: #9caa64; */
-
 }
 
 .plantEntry { 
@@ -150,27 +132,25 @@ code {
   margin: 0px -10px;
 }
 
-.item {
+.gridded_box {
   box-sizing: border-box;
   width: 50%;
   margin-bottom: 20px;
   padding: 0px 10px;
 }
 
-.content {
+.cell {
   color: #242424;
-  /* background-color: #1bbefe; */
   font-weight: 600;
   text-align: center;
   box-sizing: border-box;
   height: 100%;
-  /* padding: 10px; */
 }
 
 .select { 
   height:100%;
   width: 100%;
-  background-color: #9caa64;
+  background-color: #f0af01;
   font-family: 'Arial Narrow Bold', sans-serif;
   font-size: 100%;
   font-weight: 5000;
@@ -178,7 +158,7 @@ code {
   
 }
 .select:hover {
-  background-color: #ffee05; /* Green */
+  background-color: #ffee05;
   color: black;
 }
 
@@ -195,7 +175,7 @@ code {
 }
 
 .water:hover {
-  background-color: #33bdd2; /* Green */
+  background-color: #33bdd2;
   color: white;
 }
 
@@ -213,7 +193,7 @@ code {
 }
 
 .delete:hover {
-  background-color: #ff0000; /* Green */
+  background-color: #ff0000;
   color: white;
 }
 
@@ -226,6 +206,87 @@ code {
 .chartHolder { 
   background-color: #7a8749;
   margin:10px;
-  /* height: fit-content; */
-  /* width: fit-content; */
+  
+}
+
+.addPlantButton { 
+  width: 100%;
+  height: 8vh;
+  font-size: large;
+  background-color: #7e4a25;
+  border-style: none;
+  color: #e0e0e0;
+  }
+.addPlantButton:hover {
+  background-color: #a94e2e;
+  color: white;
+}
+
+.AddPlantLabel { 
+  background-color: rgb(39, 28, 19);
+  width: 100%;
+  height: 8vh;
+  font-size: large;
+  border-style: none;
+  color: #e0e0e0;
+  margin: auto;
+
+}
+.AddPlantP { 
+  width: 100%;
+  height: 8vh;
+  font-size: large;
+  background-color: #7e4a25;
+  border-style: none;
+  color: #e0e0e0;
+  
+}
+
+.plantCreationGuide { 
+  padding: 2vh;
+  background-color: #502712;
+  color: #e0e0e0;
+  vertical-align: middle;
+
+}
+
+.creationInput { 
+  background-color: #502712;
+  padding-bottom: 1vh;
+}
+
+.plantInput { 
+  background-color: 'black';
+  border-style: none;
+
+}
+
+input, textarea { 
+  background-color: #e6f0c2;
+}
+
+.outlineGuide { 
+  padding: 2vh;
+  background-color: #502712;
+  color: #e0e0e0;
+  vertical-align: middle;
+  font-size: small;
+}
+
+.greenO { 
+  text-decoration: underline green 3px
+}
+.redO { 
+  text-decoration: underline red 3px
+}
+.orangeO { 
+  text-decoration: underline orange 3px
+}
+.blueO { 
+  text-decoration: underline blue 3px
+}
+
+.timeSelectClass { 
+  background: #063f20;
+  color:#9caa64
 }
