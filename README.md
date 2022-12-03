@@ -1,12 +1,38 @@
 # Final Project Proposal - Plant tracker
 Group - Kenan Arica
+Class - CS 484, Fall 2022
 
-## Final project complete 
-- hosted at ->  https://quiet-cranachan-8385fe.netlify.app
+## Final project complete! 
+- **hosted at: https://quiet-cranachan-8385fe.netlify.app**
+
+Link to usage video [here](https://www.youtube.com/watch?v=toXKJ-_Wh-o)
+
+My app does everything stated in the proposal *aside from* the 'time permitting' section about adding plants to groups and viewing those groups in some layout-style way.
+
+It has the full functionality of users to mark when they watered their plants, giving each plant a custom watering interval(ex. I say my Asters should be watered twice a day - 6 hours) and giving information relative to the last watering, on top of some basic graphs showing # of waterings over time and the plant's health over time. 
+
+
+### Basic notes
+- The app uses Github OAuth for login.
+- I prepared a dummy account to showcase some of the graph functionality for the professor. These credentials have been provided in piazza post @156
+- I'm terrible with CSS. It shouldn't happen, but apologize if the interface looks strange for some reason. Alignments will be the death of me. 
+
+
+
+
+### Tested on:
+- Win 10 / MacOS Chrome 
+- Win 10 Firefox
+- MacOS Safari
+- 1080P Display 
+- Curved Ultrawide display
+
 
 
 ## Deliverable 1: MVP 
 - **hosted at: https://quiet-cranachan-8385fe.netlify.app/**
+
+
 
 
 * My MVP proposal included an endpoint to get / manage plants and their waterings. My original idea was to use some kind of express server to manage these interactions, but I ended up writing a wrapper of sorts instead. It's very imperfect, and the current deployed app doesn't use most of it because I can't figure out async programming. 
