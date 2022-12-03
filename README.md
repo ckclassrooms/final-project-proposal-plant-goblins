@@ -2,7 +2,7 @@
 Group - Kenan Arica
 Class - CS 484, Fall 2022
 
-## Final project complete! 
+## Updated 12-2-2022 Final project complete! 
 - **hosted at: https://quiet-cranachan-8385fe.netlify.app**
 
 Link to usage video [here](https://www.youtube.com/watch?v=toXKJ-_Wh-o)
